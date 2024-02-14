@@ -4,27 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5668ff9fc0.js" crossorigin="anonymous"></script>
     <title>Hounter | Find Your Dream</title>
 </head>
 <body>
 <!-- ------------------------------------------------------------------------ -->
     <div class="hero-section">
-        <div class="hero-section-navbar">
-            <img src="img/dummy-logo.svg" alt="logo">
-
-            <div class="navbar-options">
-                <button class="navbar-options-button" type="button">About Us</button>
-                <button class="navbar-options-button" type="button">Articles</button>
-                <button class="navbar-options-button" type="button">Property</button>
-            </div>
-
-            <button id="navbar-signup-button" type="button">Sign Up!</button>
-        </div>
+        <img class="gradients" src="img/sexy-gradient-1.svg" alt="gradients">
         <!-- ----------------------------------------------------------------- -->
         <div class="hero-section-title-search">
             <h1 class="hero-section-title">
-                Find The Place To Live Your Dreams Easily Here
+                Find The Place To <br>Live <span class="emphasis-text">Your Dreams</span> <br>Easily Here
             </h1>
 
             <p class="hero-section-title-description">
@@ -33,35 +26,60 @@
             </p>
 
             <form class="hero-section-search" action="#">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <input type="text" placeholder="Search..." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <i class="fa-solid fa-location-dot" style="color: orange;"></i>
+                <input type="text" placeholder="Search for the location you want!" name="search">
+                <button type="submit">Search <i class="fa-solid fa-angle-right"></i></button>
             </form>
 
             <div class="hero-section-partnership">
                 <p class="partners">Our Partnership</p>
-                <img class="partner-logo" src="img/dummy-logo.svg" alt="partner-1">
-                <img class="partner-logo" src="img/dummy-logo.svg" alt="partner-2">
-                <img class="partner-logo" src="img/dummy-logo.svg" alt="partner-3">
-                <img class="partner-logo" src="img/dummy-logo.svg" alt="partner-4">
+                <div class="partnes-logos">
+                    <img class="partner-logo" src="img/partnership-logos/traveloka_logo.png" alt="partner-1">
+                    <img class="partner-logo" src="img/partnership-logos/tiket_logo.png" alt="partner-2">
+                    <img class="partner-logo" src="img/partnership-logos/airbnb_logo.png" alt="partner-3">
+                    <img class="partner-logo" src="img/partnership-logos/tripadvisor_logo.png" alt="partner-4">
+                </div>
             </div>
 
         </div>
         <!-- ----------------------------------------------------------------- -->
-        <!-- To be remade -->
-        <div class="hero-section-recommended">
-            <div class="hero-section-recommended-num-of-users">
-                <img src="img/dummy-logo.svg" alt="dummy-monkey">
+        <div class="hero-section-navbar-and-recommended">
+            <div class="hero-section-navbar">
+                <div class="navbar-options">
+                    <button class="navbar-options-button" type="button">About Us</button>
+                    <button class="navbar-options-button" type="button">Articles</button>
+                    <button class="navbar-options-button" type="button">Property <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+    
+                <button id="navbar-signup-button" type="button">Sign Up!</button>
             </div>
-            <div class="hero-section-recommended-num-of-houses">
-                <img src="img/dummy-logo.svg" alt="dummy-monkey">
-            </div>
-            <div class="hero-section-recommended-num-of-feedbacks">
-                <img src="img/dummy-logo.svg" alt="dummy-monkey">
+            <!-- ----------------------------------------------------------------- -->
+            <div class="hero-section-recommended">
+                <div class="hero-section-recommended-frame">
+                    <img src="img/hero-section-stuff/avatars-hero-section.svg" alt="avatars">
+                    <div class="hero-section-recommended-element">
+                        <span class="hero-section-promos">1K+ people</span>
+                        <p>Successfully Getting Home</p>
+                    </div>                    
+                </div>
+
+                <div class="hero-section-recommended-frame">
+                    <img src="img/hero-section-stuff/house-example-hero-section.svg" alt="house-example">
+                    <div class="hero-section-recommended-element">
+                        <span class="hero-section-promos">56 Houses</span>
+                        <p>Sold Monthly</p>
+                    </div>                    
+                </div>
+
+                <div class="hero-section-recommended-frame">
+                    <img src="img/hero-section-stuff/single-avatar-hero-section.svg" alt="single-avatar">
+                    <div class="hero-section-recommended-element">
+                        <span class="hero-section-promos">4K+ people</span>
+                        <p>Looking For New Home</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- ----------------------------------------------------------------- -->
-        <img src="img/dummy-logo.svg" alt="hero-section-main-image">
     </div>
 <!-- ------------------------------------------------------------------------ -->
     <div class="featured-house-section">
