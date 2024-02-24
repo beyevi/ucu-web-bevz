@@ -1,0 +1,717 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+#gradient-1 {
+    top: 0;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+    z-index: -1;
+}
+#gradient-2 {
+    right: 0;
+
+    position: absolute;
+    z-index: -1;
+}
+#gradient-3 {
+    left: 0;
+
+    position: absolute;
+    z-index: -1;
+}
+
+#gradient-4 {
+    right: 0;
+
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============================================================================================== */
+
+#hounter-logo {
+    height: 40px;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 50px 120px 0 120px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.sub-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-option-button {
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    color: white;
+
+    margin-right: 15px;
+
+    font-size: large;
+    font-weight: 600;
+}
+
+button span.button-text {
+    padding: 20px 10px;
+}
+
+#signup-button {
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+
+    color: #047857;
+    background-color: #D1FAE5;
+
+    font-size: large;
+    font-weight: 600;
+
+    margin-left: 40px;
+}
+
+/* ============================================================================================== */
+
+#title-emphasis {
+    -webkit-text-stroke: black 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    width: 26vw;
+}
+
+.title-search {
+    margin-top: 20vh;
+    margin-left: 120px;
+
+    width: 30vw;
+}
+
+.title-main {
+    width: 25rem;
+    font-size: 40px;
+}
+
+.title-desciption {
+    color: #626687;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/* ============================================================================================== */
+
+.search {
+    border: 1px solid black;
+    border-radius: 30px;
+
+    /* padding: 0 15px; */
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 50px;
+}
+
+.searchbox-button {
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+
+    color: white;
+    background-color: #10B981;
+
+    font-size: large;
+    font-weight: 600;
+}
+
+input {
+    border: none;
+    margin-left: 10px;
+
+    font-size: medium;
+    font-weight: 600;
+
+    width: 20vw;
+}
+input:focus {
+    outline: none;
+}
+
+/* ============================================================================================== */
+
+.partnership {
+    margin-top: 40px;
+    color: #626687;
+}
+.partners {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============================================================================================== */
+
+#hero-section-img {
+    border-radius: 0 0 0 30px;
+}
+
+.hero-section-image {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.proms {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 15px 30px 15px;
+
+    box-sizing: border-box;
+}
+
+.proms-element {
+    background-color: white;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-shrink: 0;
+
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.proms-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.proms-header {
+    font-weight: bold;
+}
+.proms-description {
+    font-weight: 200;
+}
+
+/* ============================================================================================== */
+
+.featured-houses-section {
+    margin-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.featured-houses-section-header {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    margin: 40px 120px 0 120px;
+}
+
+.section-title-small {
+    color: orange;
+    font-size: large;
+}
+.section-title-large {
+    font-size: 36px;
+    color: #1B1C57;
+}
+
+.featured-houses-categories,
+.featured-houses-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.category-option-button,
+.arrows {
+    border-radius: 25px;
+    margin: 0 10px;
+
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 20px;
+
+    border: solid #E0E3EB;
+    background-color: white;
+}
+
+.category-option-button:hover,
+.arrows:hover {
+    background-color: #10B981;
+    color: white;
+}
+
+.category-option-button:hover .button-icon {
+    fill: white;
+}
+
+.featured-houses-carousel {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 100px;
+}
+
+.house-proposition {
+    box-sizing: border-box;
+}
+
+.house-demo {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+.house-status{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    margin: 0 0 20px 20px;
+
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+#roselands-demo,
+#cosmos-demo {
+    background-color: rgb(241, 208, 213);
+    color: red;
+}
+#woodlandside-demo {
+    background-color: rgb(149, 193, 255);
+    color: blue;
+}
+#old-lighthouse-demo {
+    background-color: rgb(152, 245, 171);
+    color: green;
+}
+
+
+.house-seller {
+    display: flex;
+    margin-top: 30px;
+}
+.username-location {
+    margin-left: 20px;
+}
+
+/* ============================================================================================== */
+
+.ready-to-sell-section {
+    margin-top: 100px;
+    /* margin-left: 120px; */
+
+    display: flex;
+    justify-content: space-around;
+}   
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.house-properties {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.property {
+    flex: 1;
+    width: 20;
+}
+
+#rectangle-divisor {
+    margin: 30px 0;
+}
+
+.house-seller-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.seller-info {
+    display: flex;
+    justify-content: space-between;
+}
+#seller-contacts-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+#contact-button {
+    background-color: #10B981;
+    color: white;
+    
+    padding: 0 20px;
+    
+    border: none;
+    border-radius: 25px;
+
+}
+
+.ready-to-sell-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.house-properties {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.house-prop {
+    color: #626687;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.ready-to-sell-img {
+    width: 40%;
+    position: relative;
+}
+#video-demo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.demo-imgs {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#demo-1,
+#demo-2,
+#demo-3 {
+    max-width: 100%;
+    margin-right: 40px;
+}
+
+/* ============================================================================================== */
+
+.reviews-section {
+    margin-top: 100px;
+}
+
+#section-title-reviews,
+#section-title-articles {
+    text-align: center;
+}
+
+.reviews-carousel {
+    height: 600px;  /* Я просто не придумав нічого кращого */
+    
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    position: relative;
+    box-sizing: border-box;
+
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.single-review {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.review-background {
+    display: block;
+    width: 500%;
+    height: auto;
+
+    padding: 10px 30px;
+}
+.user-review-body {
+    width: 40%;
+    height: auto;
+    transform: translateY(70%);
+
+    position: absolute;
+    z-index: 1;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Updated */
+
+    margin-top: 30px;
+}
+.review-text {
+    padding: 0 20px;
+    font-size: 16px;
+}
+.review-description {
+    color: #626687;
+}
+
+.reviewer-grade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+}
+.username-position {
+    margin-left: 15px;
+}
+
+/* ============================================================================================== */
+
+.articles-button {
+    color: white;
+    background-color: #10B981;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.articles-display {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article-col-1 {
+    display: flex;
+    flex-direction: column;
+}
+.article {
+    display: flex;
+    margin: 20px 0;
+}
+.article-info {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.article-author {
+    display: flex;
+    align-items: center;
+}
+.article-author-username {
+    margin-left: 15px;
+}
+.article-title {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 70%;
+}
+.date-published {
+    margin-top: 10px;
+}
+
+
+.main-article-info {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-evenly;
+}
+
+.main-article-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.article-col-2 {
+    width: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-right: 100px;
+}
+
+.articles-title-large {
+    font-size: 36px;
+    color: #1B1C57;
+}
+
+/* ============================================================================================== */
+
+.subscribe {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.subscribe-background {
+    position: relative;
+    z-index: 0;
+}
+
+.subscribe-contents {
+    position: absolute;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.subscribe-form {
+    background-color: white;
+    
+    display: inline;
+    
+    border-radius: 25px;
+    border: solid 1px black;
+
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 30px; */
+}
+
+.subscribe-text {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#subscribe-icon {
+    margin-left: 20px;
+}
+
+.subscribe-form input {
+    background: none;
+}
+
+.subscribe-button {
+    height: 50px;
+    background-color: #10B981;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* ============================================================================================== */
+
+footer {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.bio-sect {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-sect img {
+    width: 100px;
+}
+
+.social-media {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.social-media i {
+    margin-right: 30px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect, .sect-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.sect-list {
+    color: #888B97;
+}
+
+.sect {
+    margin: 0 40px;
+}
+
+.sect-item {
+    margin: 20px 0;
+}

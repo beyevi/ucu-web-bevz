@@ -152,13 +152,17 @@ html {
     flex-direction: row;
     justify-content: space-around;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-section-recommended-frame {
     background-color: white;
-    margin: 20px 20px;
-    padding: 0 10px;
+    height: 104px;
+    padding: 10px;
+
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
 
     display: flex;
     align-items: center;
@@ -168,10 +172,30 @@ html {
 }
 
 .hero-section-recommended-element {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-around;
     margin-left: 20px;
+    overflow-x: hidden;
 }
 
 .hero-section-promos {
     font-weight: bold;
 }
 /* =================================================== */
+.featured-house-section {
+    padding-left: 20px;
+}
+
+.featured-house-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-small {
+    color: orange;
+}
+.title-large {
+    font-size: 40px;
+}

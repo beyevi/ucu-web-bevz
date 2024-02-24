@@ -3,346 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style/style.css">
+
+    <link rel="icon" type="image/x-icon" href="img/hounter.svg">
+    <link rel="stylesheet" href="static/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/5668ff9fc0.js" crossorigin="anonymous"></script>
-    <title>Hounter | Find Your Dream</title>
+
+    <title>Hounter</title>
 </head>
 <body>
-<!-- ------------------------------------------------------------------------ -->
-    <div class="hero-section">
-        <img class="gradients" src="img/gradients/sexy-gradient-1.svg" alt="gradients">
-        <img id="brand-logo" src="img/Houter-Logo.svg" alt="brand-logo">
-        <!-- ----------------------------------------------------------------- -->
-        <div class="hero-section-title-search">
-            <h1 class="hero-section-title">
-                Find The Place To <br>Live <span class="emphasis-text">Your Dreams</span> <br>Easily Here
-            </h1>
-
-            <p class="hero-section-title-description">
-                Everything you need about finding your place to live will be here,
-                where it will be easier for you
-            </p>
-
-            <form class="hero-section-search" action="#">
-                <i class="fa-solid fa-location-dot" style="color: orange;"></i>
-                <input type="text" placeholder="Search for the location you want!" name="search">
-                <button type="submit">Search <i class="fa-solid fa-angle-right"></i></button>
-            </form>
-
-            <div class="hero-section-partnership">
-                <p class="partners">Our Partnership</p>
-                <div class="partnes-logos">
-                    <img class="partner-logo" src="img/partnership-logos/traveloka_logo.png" alt="partner-1">
-                    <img class="partner-logo" src="img/partnership-logos/tiket_logo.png" alt="partner-2">
-                    <img class="partner-logo" src="img/partnership-logos/airbnb_logo.png" alt="partner-3">
-                    <img class="partner-logo" src="img/partnership-logos/tripadvisor_logo.png" alt="partner-4">
-                </div>
+    <img id="gradient-1" src="img/gradients/sexy-gradient-1.svg" alt="sexy-gradient-1">
+    <div class="navbar">
+        <img id="hounter-logo" src="img/Houter-Logo.svg" alt="hounter-logo">
+        <div class="sub-navbar">
+            <div class="navbar-options">
+                <button class="navbar-option-button"><span class="button-text">About Us</span></button>
+                <button class="navbar-option-button"><span class="button-text">Article</span></button>
+                <button class="navbar-option-button"><span class="button-text">Property <i class="fa-solid fa-chevron-down"></i></span></button>
             </div>
-
+            <button id="signup-button"><span class="button-text">Sign Up!</span></button>
         </div>
-        <!-- ----------------------------------------------------------------- -->
-        <div class="hero-section-navbar-and-recommended">
-            <div class="hero-section-navbar">
-                <div class="navbar-options">
-                    <button class="navbar-options-button" type="button">About Us</button>
-                    <button class="navbar-options-button" type="button">Articles</button>
-                    <button class="navbar-options-button" type="button">Property <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-    
-                <button id="navbar-signup-button" type="button">Sign Up!</button>
+    </div>
+    <!-- ------------------------------------------------------------ -->
+    <div class="hero-section">
+        <div class="title-search">
+            <div class="title">
+                <h1 class="title-main">
+                    Find The Place To Live 
+                    <span id="title-emphasis">Your Dreams</span> 
+                    Easily Here
+                </h1>
+                <span class="title-description">
+                    Everything you need about finding your place to live will be here, where it will be easier for you
+                </span>
             </div>
-            <!-- ----------------------------------------------------------------- -->
-            <div class="hero-section-recommended">
-                <div class="hero-section-recommended-frame">
+
+            <div class="search">
+                <i class="fa-solid fa-location-dot fa-xl" style="color: orange; margin-left: 20px;"></i>
+                <input type="text" name="searchbox" id="hero-section-search" placeholder="Search for the location you want!">
+                <button class="searchbox-button"><span class="searchbox-text">Search   <i class="fa-solid fa-chevron-right"></i></span></button>
+            </div>
+
+            <div class="partnership">
+                <span class="">Our Partnership</span>
+                <div class="partners">
+                    <img src="img/partnership-logos/traveloka_logo.png" alt="traveloka">
+                    <img src="img/partnership-logos/tiket_logo.png" alt="tiket">
+                    <img src="img/partnership-logos/airbnb_logo.png" alt="airbnb">
+                    <img src="img/partnership-logos/tripadvisor_logo.png" alt="tripadvisor">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section-image">
+            <img id="hero-section-img" src="img/hero-section-stuff/house-1.png" alt="hero-section-house-image">
+            <div class="proms">
+                <div class="proms-element">
                     <img src="img/hero-section-stuff/avatars-hero-section.svg" alt="avatars">
-                    <div class="hero-section-recommended-element">
-                        <span class="hero-section-promos">1K+ people</span>
-                        <p>Successfully Getting Home</p>
-                    </div>                    
+                    <div class="proms-text">
+                        <span class="proms-header">1K+ People</span>
+                        <span class="proms-description">Successfully Getting Home</span>                        
+                    </div>
                 </div>
-
-                <div class="hero-section-recommended-frame">
-                    <img src="img/hero-section-stuff/house-example-hero-section.svg" alt="house-example">
-                    <div class="hero-section-recommended-element">
-                        <span class="hero-section-promos">56 Houses</span>
-                        <p>Sold Monthly</p>
-                    </div>                    
+                <div class="proms-element">
+                    <img src="img/hero-section-stuff/house-example-hero-section.svg" alt="house">
+                    <div class="proms-text">
+                        <span class="proms-header">56 Houses</span>
+                        <span class="proms-description">Sold Monthly</span>                        
+                    </div>
                 </div>
-
-                <div class="hero-section-recommended-frame">
-                    <img src="img/hero-section-stuff/single-avatar-hero-section.svg" alt="single-avatar">
-                    <div class="hero-section-recommended-element">
-                        <span class="hero-section-promos">4K+ people</span>
-                        <p>Looking For New Home</p>
+                <div class="proms-element">
+                    <img src="img/hero-section-stuff/single-avatar-hero-section.svg" alt="avatar">
+                    <div class="proms-text">
+                        <span class="proms-header">4K+ People</span>
+                        <span class="proms-description">People Looking for New Homes</span>                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- ------------------------------------------------------------------------ -->
-    <div class="featured-house-section">
-        <div class="featured-house-section-title">
-            <p>Our recommendation</p>
-            <h3>Featured House</h3>
-        </div>
-
-        <div class="featured-house-section-categories">
-            <!-- FontAwesome to be upgraded to version 5 instead of 4.7 -->
-            <button type="button"><i class="fa fa-home"></i> House</button>
-            <button type="button"><i class="fa fa-home"></i> Villa</button>
-            <button type="button"><i class="fa fa-building"></i> Apartment</button>
-        </div>
-
-        <div class="featured-house-section-arrows">
-            <button type="button"><i class="fa fa-arrow-left"></i></button>
-            <button type="button"><i class="fa fa-arrow-right"></i></button>
-        </div>
-
-        <div class="featured-house-section-propositions">
-            <!-- ---------------------------------------------- -->
-            <div class="proposed-house">
-                <img src="img/dummy-logo.svg" alt="house-1">
-                <div class="proposed-house-name-n-price">
-                    <p class="proposed-house-name">Roselands House</p>
-                    <p class="proposed-house-price">$very-many-sheckels</p>
-                </div>
-
-                <div class="proposed-house-seller">
-                    <img src="img/dummy-logo.svg" alt="seller-avatar">
-                    <p class="seller-name">Іван Іванович</p>
-                    <p class="seller-position">Голова колгоспу</p>
-                </div>
+    <!-- ------------------------------------------------------------ -->
+    <div class="featured-houses-section">
+        <div class="featured-houses-section-header">
+            <div class="section-title">
+                <span class="section-title-small">Our Recommendation</span>
+                <br>
+                <h2>
+                    <span class="section-title-large">Featured House</span>
+                </h2>
             </div>
 
-            <div class="proposed-house">
-                <img src="img/dummy-logo.svg" alt="house-2">
+            <!-- FontAwesome doesn't have all icons I needed for the design :( -->
+            <div class="featured-houses-categories">
+                <button class="category-option-button">
+                    <span class="button-icon">
+                        <img src="img/icons/house.svg" alt="house-icon">
+                    </span>
+                    <span class="button-text">House</span>
+                </button>
                 
-                <div class="proposed-house-name-n-price">
-                    <p class="proposed-house-name">Roselands House</p>
-                    <p class="proposed-house-price">$very-many-sheckels</p>
-                </div>
-
-                <div class="proposed-house-seller">
-                    <img src="img/dummy-logo.svg" alt="seller-avatar">
-                    <p class="seller-name">Іван Іванович</p>
-                    <p class="seller-position">Голова колгоспу</p>
-                </div>
+                <button class="category-option-button">
+                    <img class="button-icon" src="img/icons/villa.svg" alt="villa-icon">
+                    <span class="button-text">Villa</span>
+                </button>
+    
+                <button class="category-option-button">
+                    <img class="button-icon" src="img/icons/apartment.svg" alt="apartment-icon">
+                    <span class="button-text">Apartment</span>
+                </button>
             </div>
+    
+            <div class="featured-houses-arrows">
+                <button class="arrows"><i class="fa fa-chevron-left"></i></button>
+                <button class="arrows"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
 
-            <div class="proposed-house">
-                <img src="img/dummy-logo.svg" alt="house-3">
+        <div class="featured-houses-carousel">
+            <div class="house-proposition">
+                <div class="house-demo">
+                    <img src="img/houses/Roselands House.png" alt="Roselands House">
+                    <span id="roselands-demo" class="house-status"><i class="fa-solid fa-fire"></i> Popular</span>
+                </div>
                 
-                <div class="proposed-house-name-n-price">
-                    <p class="proposed-house-name">Roselands House</p>
-                    <p class="proposed-house-price">$very-many-sheckels</p>
+                <div class="house-demo-description">
+                    <h3><span class="house-name">Roselands House</span></h3>
+                    <span class="house-price">$ 35.000.000</span>
                 </div>
 
-                <div class="proposed-house-seller">
-                    <img src="img/dummy-logo.svg" alt="seller-avatar">
-                    <p class="seller-name">Іван Іванович</p>
-                    <p class="seller-position">Голова колгоспу</p>
+                <div class="house-seller">
+                    <img src="img/user-avatars/Dianne Russel.svg" alt="Dianne Russel">
+                    <div class="username-location">
+                        <span class="username">Dianne Russel</span>
+                        <br>
+                        <span class="user-location">Machester, Kentucky</span>
+                    </div>
                 </div>
             </div>
-            <!-- ---------------------------------------------- -->
+            <!-- ------------------------------------------------------------ -->
+            <div class="house-proposition">
+                <div class="house-demo">
+                    <img src="img/houses/Woodlandside.png" alt="Woodlandside">
+                    <span id="woodlandside-demo" class="house-status"><i class="fa-solid fa-house"></i> New House</span>
+                </div>
+                
+                <div class="house-demo-description">
+                    <h3><span class="house-name">Woodlandside</span></h3>
+                    <span class="house-price">$ 20.000.000</span>
+                </div>
+
+                <div class="house-seller">
+                    <img src="img/user-avatars/Robert Fox.svg" alt="Robert Fox">
+                    <div class="username-location">
+                        <span class="username">Robert Fox</span>
+                        <br>
+                        <span class="user-location">Dr. San Jose, South Dakota</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------ -->
+            <div class="house-proposition">
+                <div class="house-demo">
+                    <img src="img/houses/The Old Lighthouse.png" alt="The Old Lighthouse">
+                    <span id="old-lighthouse-demo" class="house-status"><i class="fa-solid fa-wallet"></i> Best Deals</span>
+                </div>
+                
+                <div class="house-demo-description">
+                    <h3><span class="house-name">The Old Lighthouse</span></h3>
+                    <span class="house-price">$ 44.000.000</span>
+                </div>
+
+                <div class="house-seller">
+                    <img src="img/user-avatars/Ronald Richards.svg" alt="Ronald Richards">
+                    <div class="username-location">
+                        <span class="username">Ronald Richards</span>
+                        <br>
+                        <span class="user-location">Santa Ana, Illinois</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------ -->
+            <div class="house-proposition">
+                <div class="house-demo">
+                    <img src="img/houses/Cosmos House.png" alt="Cosmo's House">
+                    <span id="cosmos-demo" class="house-status"><i class="fa-solid fa-fire"></i> Popular</span>
+                </div>
+                
+                <div class="house-demo-description">
+                    <h3><span class="house-name">Cosmo's House</span></h3>
+                    <span class="house-price">$ 22.000.000</span>
+                </div>
+
+                <div class="house-seller">
+                    <img src="img/user-avatars/Jenny Wilson.svg" alt="Jenny Wilson">
+                    <div class="username-location">
+                        <span class="username">Jenny Wilson</span>
+                        <br>
+                        <span class="user-location">Preston Rd. Inglewood, Maine 98380</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<!-- ------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------ -->
     <div class="ready-to-sell-section">
-        <div class="ready-to-sell-house-info">
-            <h3>Let's Tour And See Our House!</h3>
-            <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
-        </div>
-        <div class="ready-to-sell-house-detail">
-            <h4>House Detail</h4>
-            <ul>
-                <li class="house-property"><i class="fa fa-bed"></i> 4 Bedrooms</li>
-                <li class="house-property"><i class="fa fa-bath"></i> 2 Bathrooms</li>
-                <li class="house-property"><i class="fa fa-car"></i> 1 Carport</li>
-                <li class="house-property"><i class="fa fa-building"></i> 2 Floors</li>
-            </ul>
+        <div class="ready-to-sell-info">
+            <div class="section-title">
+                <span class="section-title-small">Ready To Sell!</span>
+                <br>
+                <h2>
+                    <span class="section-title-large">Let's Tour And See Our House!</span>
+                </h2>
+            </div>
+            <span style="color: #626687;">Houses recommended by our partners that have been curated to become the home of your dreams!</span>
+            <div style="margin-top: 10px;"   class="house-detail">
+                <span style="font-size: 16px; font-weight: 600;">House Detail</span>
+                <div class="house-properties">
+                    <span class="house-prop"><i class="fa-solid fa-bed"></i> 4 Bedrooms</span>
+                    <span class="house-prop"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                    <span class="house-prop"><i class="fa-solid fa-car"></i> 1 Carport</span>
+                    <span class="house-prop"><i class="fa-solid fa-stairs"></i> 2 Floors</span>
+                </div>
+            </div>
+            
+            <img id="rectangle-divisor" src="img/rectangle-ready-to-sell.png">
+            
+            <div class="house-seller-contacts">
+                <div class="seller-info">
+                    <img src="img/user-avatars/Dianne Russel.svg" alt="Dianne Russel">
+                    <div id="seller-contacts-username">
+                        <span>Dianne Russel</span>
+                        <span style="color: #626687;">Manager Director</span>
+                    </div>
+                </div>
+                <button id="contact-button"><i class="fa-solid fa-phone"></i> <span style="font-weight: 600; padding-left: 10px;">Contact Now</span></button>
+            </div>
         </div>
 
-        <div class="proposed-house-seller">
-            <img src="img/dummy-logo.svg" alt="seller-avatar">
-            <p class="seller-name">Іван Іванович</p>
-            <p class="seller-position">Голова колгоспу</p>
-        </div>
-
-        <button type="button"><i class="fa fa-phone"> Contact Now!</i></button>
-
-        <div class="house-demo">
-            <video width="320" height="240" controls>
-                <source src="static/video/pexels-miniperde-18137309 (Original).mp4" type="video/mp4">
+        <div class="ready-to-sell-img">
+            <video width="60%" id="video-demo">
+                <source src="img/video/house-demo.mp4" type="video/mp4">
             </video>
-
-            <img src="img/dummy-logo.svg" alt="ready-to-sell-house-preview-1">
-            <img src="img/dummy-logo.svg" alt="ready-to-sell-house-preview-2">
-            <img src="img/dummy-logo.svg" alt="ready-to-sell-house-preview-3">
+            <div class="demo-imgs">
+                <img id="demo-1" src="img/houses/house-demo-1.png" alt="House demo 1">
+                <img id="demo-2" src="img/houses/house-demo-2.png" alt="House demo 2">
+                <img id="demo-3" src="img/houses/house-demo-3.png" alt="House demo 3">
+            </div>
         </div>
-
     </div>
-<!-- ------------------------------------------------------------------------ -->
-    <div class="user-reviews-section">
-        
-        <h2>What Our Users Say About Us</h2>
-        <!-- ------------------------------------------------ -->
-        <div class="single-review">
-            <img src="img/dummy-logo.svg" alt="house-image">
-            <div class="review-body">
-                <h3 class="review-body-header">Best! I Got The House I Wanted Through Haunter</h3>
-                <p class="review-body-text">
-                    Through this website I can get a house 
-                    with the type and specifications I want very easily, 
-                    without a complicated process to be able to find information 
-                    on the house we want.
-                </p>
-            </div>
-
-            <div class="proposed-house-seller">
-                <img src="img/dummy-logo.svg" alt="seller-avatar">
-                <p class="seller-name">Іван Іванович</p>
-                <p class="seller-position">Голова колгоспу</p>
-            </div>
-
-            <span><i class="fa fa-star"></i> 4.6</span>
+    <!-- ------------------------------------------------------------ -->
+    <div class="reviews-section">
+        <div class="section-title" id="section-title-reviews">
+            <span class="section-title-small">See Our Reviews</span>
+            <br>
+            <h2>
+                <span class="section-title-large">What Our Users Say About Us</span>
+            </h2>
         </div>
-        <!-- ------------------------------------------------ -->
-        <div class="single-review">
-            <img src="img/dummy-logo.svg" alt="house-image">
-            <div class="review-body">
-                <h3 class="review-body-header">Best! I Got The House I Wanted Through Haunter</h3>
-                <p class="review-body-text">
-                    Through this website I can get a house 
-                    with the type and specifications I want very easily, 
-                    without a complicated process to be able to find information 
-                    on the house we want.
-                </p>
-            </div>
 
-            <div class="proposed-house-seller">
-                <img src="img/dummy-logo.svg" alt="seller-avatar">
-                <p class="seller-name">Іван Іванович</p>
-                <p class="seller-position">Голова колгоспу</p>
-            </div>
+        <div class="reviews-carousel">
+            <!-- -------------------------------------------- -->
+            <div class="single-review">
+                <img class="review-background" src="img/houses/house-review-3.svg" alt="Review 3">
+                <div class="user-review-body">
+                    <div class="review-text">
+                        <h3><span class="review-title">My house sold out fast!</span></h3>
+                        <span class="review-description">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</span>
+                    </div>
+                    
+                    <div class="reviewer-grade">
+                        <div class="reviewer">
+                            <img src="img/user-avatars/Robert Fox.svg" alt="Robert Fox">
+                            <div class="username-position">
+                                <span class="username">Robert Fox</span>
+                                <br>
+                                <span class="user-position">CEO Andarafish</span>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <i class="fa-solid fa-star" style="color: orange;"></i>
+                            <span style="font-weight: bold;">4.3</span>
+                        </div>
+                    </div>
 
-            <span><i class="fa fa-star"></i> 4.6</span>
+                </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <div class="single-review">
+                <img class="review-background" src="img/houses/house-review-1.svg" alt="Review 1">
+                <div class="user-review-body">
+                    <div class="review-text">
+                        <h3><span class="review-title">Best! I got the house I wanted through Hounter</span></h3>
+                        <span class="review-description">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</span>
+                    </div>
+                    
+                    <div class="reviewer-grade">
+                        <div class="reviewer">
+                            <img src="img/user-avatars/Dianne Russel.svg" alt="Dianne Russel">
+                            <div class="username-position">
+                                <span class="username">Dianne Russel</span>
+                                <br>
+                                <span class="user-position">Manager Director</span>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <i class="fa-solid fa-star" style="color: orange;"></i>
+                            <span style="font-weight: bold;">4.9</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- -------------------------------------------- -->
+            <div class="single-review">
+                <img class="review-background" src="img/houses/house-review-2.svg" alt="Review 2">
+                <div class="user-review-body">
+                    <div class="review-text">
+                        <h3><span class="review-title">Through the Hounter, I can get a house for my self</span></h3>
+                        <span class="review-description">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</span>
+                    </div>
+                    
+                    <div class="reviewer-grade">
+                        <div class="reviewer">
+                            <img src="img/user-avatars/Jenny Wilson.svg" alt="Jenny Wilson">
+                            <div class="username-position">
+                                <span class="username">Jenny Wilson</span>
+                                <br>
+                                <span class="user-position">Head of Marketing</span>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <i class="fa-solid fa-star" style="color: orange;"></i>
+                            <span style="font-weight: bold;">4.6</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- -------------------------------------------- -->
         </div>
-        <!-- ------------------------------------------------ -->
-        <div class="single-review">
-            <img src="img/dummy-logo.svg" alt="house-image">
-            <div class="review-body">
-                <h3 class="review-body-header">Best! I Got The House I Wanted Through Haunter</h3>
-                <p class="review-body-text">
-                    Through this website I can get a house 
-                    with the type and specifications I want very easily, 
-                    without a complicated process to be able to find information 
-                    on the house we want.
-                </p>
-            </div>
-
-            <div class="proposed-house-seller">
-                <img src="img/dummy-logo.svg" alt="seller-avatar">
-                <p class="seller-name">Іван Іванович</p>
-                <p class="seller-position">Голова колгоспу</p>
-            </div>
-
-            <span><i class="fa fa-star"></i> 4.6</span>
-        </div>
-        <!-- ------------------------------------------------ -->
     </div>
-<!-- ------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------ -->
+    <img id="gradient-3" src="img/gradients/sexy-gradient-3.svg" alt="sexy-gradient-3"> 
+    <!-- ------------------------------------------------------------ -->
     <div class="articles-section">
-        <!-- ----------------------------------------------------- -->
-        <div class="article" id="article-1">
-            <div class="article-author">
-                <img src="img/dummy-logo.svg" alt="user-avatar">
-                <p class="username">Іван Іванович</p>
-            </div>
-            <img src="img/dummy-logo.svg" alt="article-preview">
-            <h2>The Things We Need to Check When We Want To Buy A House</h2>
-            <!-- to be changed -->
-            <p class="time-published">2008-02-14 20:00</p>
-        </div>
-        <!-- ----------------------------------------------------- -->
-        <div class="article" id="article-2">
-            <div class="article-author">
-                <img src="img/dummy-logo.svg" alt="user-avatar">
-                <p class="username">Іван Іванович</p>
-            </div>
-            <img src="img/dummy-logo.svg" alt="article-preview">
-            <h2>The Things We Need to Check When We Want To Buy A House</h2>
-            <!-- to be changed -->
-            <p class="time-published">2008-02-14 20:00</p>
-        </div>
-        <!-- ----------------------------------------------------- -->
-        <div class="article" id="article-3">
-            <div class="article-author">
-                <img src="img/dummy-logo.svg" alt="user-avatar">
-                <p class="username">Іван Іванович</p>
-            </div>
-            <img src="img/dummy-logo.svg" alt="article-preview">
-            <h2>The Things We Need to Check When We Want To Buy A House</h2>
-            <!-- to be changed -->
-            <p class="time-published">2008-02-14 20:00</p>
-        </div>
-        <!-- ----------------------------------------------------- -->
-        <div class="article" id="featured-article">
-            <div class="article-author">
-                <img src="img/dummy-logo.svg" alt="user-avatar">
-                <p class="username">Іван Іванович</p>
-            </div>
-            <img src="img/dummy-logo.svg" alt="article-preview">
-            <h2>The Things We Need to Check When We Want To Buy A House</h2>
-            <!-- to be changed -->
-            <p class="time-published">2008-02-14 20:00</p>
-        </div>
-        <!-- ----------------------------------------------------- -->
-    </div>
-<!-- ------------------------------------------------------------------------ -->
-    <div class="subscribe">
-        <h2>Subscribe For More Info And Update From Hounter</h2>
-        <form action="#">
-            <i class="fa fa-envelope"></i>
-            <input type="email" placeholder="Enter your email" name="email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-<!-- ------------------------------------------------------------------------ -->
-    <footer>
-        <div class="brand-shortly">
-            <img src="img/dummy-logo.svg" alt="dummy-logo">
-            <p>
-                We provide information about properties such as houses, 
-                villas and apartments to help people find their dream home
-            </p>
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
+        <div class="section-title" id="section-title-articles">
+            <span class="section-title-small">See Tips And Tricks From Our Partners</span>
+            <br>
+            <h2>
+                <span class="articles-title-large">Find Out More About <br> Selling And Buying Homes</span>
+            </h2>
+            <button class="articles-button"><span style="font-size: 20px;">More Articles</span></button>
         </div>
 
-        <ul class="property-list">
-            <h3>Property</h3>
-            <li class="property-item">House</li>
-            <li class="property-item">Apartment</li>
-            <li class="property-item">Villa</li>
-        </ul>
-        <ul class="article-list">
-            <h3>Articles</h3>
-            <li class="article-item">New Articles</li>
-            <li class="article-item">Popular Articles</li>
-            <li class="article-item">Most Read</li>
-            <li class="article-item">Tips & Tricks</li>
-        </ul>
-        <ul class="contact">
-            <h3>Contact</h3>
-            <li class="contact-info-address">2464 Royal Ln. Mesa, New Jersey 45463</li>
-            <li class="contact-info-phone">(671) 555-0110</li>
-            <li class="contact-info-email">info@hounter.com</li>
-        </ul>
+
+        <div class="articles-display">
+            <div class="article-col-1">
+                <div class="article">
+                    <img src="img/articles/article-preview-1.png" alt="Article Preview 1">
+                    <div class="article-info">
+                        <div class="article-author">
+                            <img src="img/user-avatars/Dianne Russel.svg" alt="Dianne Russel">
+                            <span class="article-author-username">Dianne Russel</span>
+                        </div>
+                        <span class="article-title">The Things We Need To Check When We Want To Buy A House</span>
+                        <div class="date-published">
+                            <span><i class="fa-solid fa-clock"></i> 4 min read | 25 Apr 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="img/articles/article-preview-2.png" alt="Article Preview 2">
+                    <div class="article-info">
+                        <div class="article-author">
+                            <img src="img/user-avatars/Ronald Richards.svg" alt="Ronald Richards">
+                            <span class="article-author-username">Ronald Richards</span>
+                        </div>
+                        <span class="article-title">7 Ways to distinguish the quality of the house we want to buy</span>
+                        <div class="date-published">
+                            <span><i class="fa-solid fa-clock"></i> 6 min read | 24 Apr 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="img/articles/article-preview-3.png" alt="Article Preview 3">
+                    <div class="article-info">
+                        <div class="article-author">
+                            <img src="img/user-avatars/Jenny Wilson.svg" alt="Jenny Wilson">
+                            <span class="article-author-username">Jenny Wilson</span>
+                        </div>
+                        <span class="article-title">The best way to know the quality of the house we want to buy</span>
+                        <div class="date-published">
+                            <span><i class="fa-solid fa-clock"></i> 2 min read | 24 Apr 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-col-2">
+                <img id="proposed-article" src="img/articles/article-preview-main.png" alt="Proposed Article">
+                <div class="main-article-info">
+                    <div class="article-author">
+                        <img src="img/user-avatars/Robert Fox.svg" alt="Robert Fox">
+                        <span class="article-author-username">Robert Fox</span>
+                    </div>
+                    <span class="main-article-title">12 Things to know before buying a house</span>
+                    <br>
+                    <span class="main-article-description" style="color: #888B97;">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</span>
+                    <div class="date-published">
+                        <span><i class="fa-solid fa-clock"></i> 2 min read | 24 Apr 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- ------------------------------------------------------------ -->
+    <div class="subscribe">
+        <img id="subscribe-background" src="img/subscribe-background.png" alt="subscribe backround">
+        <div class="subscribe-contents">
+            <div class="subscribe-text">
+                <span>Subscribe For More Info</span>
+                <br>
+                <span>And Update From Hounter</span>
+            </div>
+    
+            <div class="subscribe-form">
+                <i id="subscribe-icon" class="fa-solid fa-envelope" style="color: rgb(62, 153, 251);"></i>
+                <input type="text" placeholder="Your email here">
+                <buttonc class="subscribe-button"><span class="button-text">Subscribe Now</span></buttonc>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------ -->
+    <img id="gradient-4" src="img/gradients/sexy-gradient-4.svg" alt="sexy-gradient-4">
+    <footer>
+        <div class="bio-sect">
+            <img src="img/Houter-Logo.svg" alt="Hounter Logo">
+            <span style="margin: 20px 0; color: #888B97;">We provide information about properties such as houses, villas and apartments to help people find their dream home</span>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                <i class="fa-brands fa-twitter fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="sect">
+                <h4 class="sect-title">
+                    Property
+                </h4>
+                <div class="sect-list">
+                    <span class="sect-item">House</span>
+                    <span class="sect-item">Apartment</span>
+                    <span class="sect-item">Villa</span>
+                </div>
+            </div>
+            
+            <div class="sect">
+                <h4 class="sect-title">
+                    Article
+                </h4>
+                <div class="sect-list">
+                    <span class="sect-item">New Article</span>
+                    <span class="sect-item">Popular Articles</span>
+                    <span class="sect-item">Most Read</span>
+                    <span class="sect-item">Tips & Tricks</span>
+                </div>
+            </div>
+    
+            <div class="sect">
+                <h4 class="sect-title">
+                    Contact
+                </h4>
+                <div class="sect-list">
+                    <span class="sect-item">2464 Royal Ln. Mesa, New Jersey 45463</span>
+                    <span class="sect-item">(671) 555-0110</span>
+                    <span class="sect-item">info@hounter.com</span>    
+                </div>
+            </div>
+        </div>        
     </footer>
-<!-- ------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------ -->
 </body>
 </html>
